@@ -1,0 +1,122 @@
+<DOCTYPE! html>
+    <head>
+        <title>Loja Eletrônicos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Nova+Square&display=swap" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <section class="topo">
+                <ul class="classe-produtos">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Headphones</a></li>
+                    <li><a href="">Gaming</a></li>
+                    <li><a href="">Amplifier</a></li>
+                    <div class="menu-icones">
+                        <li><img width="20" src="icons/search-white.png" alt="search"/></li>
+                        <li><img width="20" src="icons/account-white.png" alt="account"/></li>
+                        <li><img width="20" src="icons/shop-white.png" alt="shop"/></li>
+                    </div>
+                </ul>
+        </section>
+
+        <script>
+            alert("Website still developing!")
+        </script>
+
+        <section class="caixa-slider">
+            <div class="center">
+                <h2>HEADPHONES</h2>
+                <div class="slider-container">
+                    <img src="imagens/headphone-grey-background.jpg" />
+                    <img src="imagens/headphone-yellow-background.jpg "/>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script type="text/javascript">
+          $('section.caixa-slider .slider-container').slick({ //modifica o depoimentos de acordo com a section criada acima
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            responsive:
+                [
+                  {
+                    breakpoint: 768,
+                    settings: {
+                      slidesToShow: 1
+                    }
+                  }
+                ]
+            }); 
+        </script>
+
+        <section class="produtos-principais">
+            <div class="produtos-container">
+                    <div class="produtos">
+                        <h2>Amplifier Mixer PWM1000 250W</h2>
+                        <p>The best way to listen</p>
+                        <img src="imagens/amplifier-venda.jpg" />
+                    </div>
+
+                    <div class="produtos">
+                        <h2>Iphone 12</h2>
+                        <p>New ways to communicate</p>
+                        <img src="imagens/iphone-venda.jpg"/>
+                    </div>
+
+                    <div class="produtos">
+                        <h2>JBL 540</h2>
+                        <p>Good taste to music</p>
+                        <img src="imagens/fone-venda.jpg"/> </a>
+                    </div>
+
+                    <div class="produtos">
+                        <h2>MK Duo</h2>
+                        <p>Perfect for gaming</p>
+                        <img src="imagens/gamer_tecladin-venda.jpg"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="suporte">
+            <div class="center">
+                <div class="suporte-container"/>
+                    <div class="suportando">
+                        <a>
+                            <h2>Suport</h2>
+                            <p>Warranty</p>
+                            <p>User Guide</p>
+                        </a>
+                    </div>
+
+                    <div class="sobre">
+                        <a>
+                            <h2>About Us</h2>
+                            <p>Leadership Team</p>
+                            <p>Privacy Policy</p>
+                        </a>
+                    </div>
+
+                    <div class="seguir">
+                        <a>
+                            <h2>Follow me</h2>
+                            <p>Email: contact@support.com</p>
+                            <p>Hotline: 1 234 567 89</p>
+                        </a>
+                    </div>
+                </div>       
+            </div>
+        </section>
+    </body>
+</html>
